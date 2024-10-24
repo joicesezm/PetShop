@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop do Senac - O Melhor Para nosso Amigo </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="land1.css">
+</head>
+<body>
+
+<header>
+    <h1>Pet Shop do Senac</h1>
+    <nav>
+        <a href="consulta-cliente-pet.php">Consulta Clientes</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#promocoes">Promoções</a>
+        <a href="#contato">Contato</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="carousel">
+    <div class="carousel-images">
+        <img src="images1.jpg" alt="Promoção 1">
+        <img src="images2.jpg" alt="Promoção 2">
+        <img src="image3.jpg" alt="Promoção 3">
+    </div>
+    <div class="carousel-buttons">
+        <button class="button" onclick="prevSlide()">&#10094;</button>
+        <button class="button" onclick="nextSlide()">&#10095;</button>
+    </div>
+</section>
+
+<section class="products" id="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="product">
+        <h3>Ração Premium</h3>
+        <p>Nutrição completa e balanceada para o seu pet.</p>
+        <p>Preço: R$ 100,00</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+        <h3>Brinquedo Interativo</h3>
+        <p>Estimula a inteligência e diversão do seu pet.</p>
+        <p>Preço: R$ 50,00</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+        <h3>Acessório de Moda</h3>
+        <p>Estilo e conforto para seu melhor amigo.</p>
+        <p>Preço: R$ 30,00</p>
+        <button>Adicionar ao Carrinho</button>
+    </div>
+</section>
+
+<section class="services" id="servicos">
+    <h2>Serviços Oferecidos</h2>
+    <div class="service">
+        <h3>Banho e Tosa</h3>
+        <p>Mantenha seu pet limpo e cheiroso.</p>
+    </div>
+    <div class="service">
+        <h3>Adestramento</h3>
+        <p>Ensine novos truques e comandos ao seu pet.</p>
+    </div>
+    <div class="service">
+        <h3>Hospedagem</h3>
+        <p>Cuidado e carinho quando você não está em casa.</p>
+    </div>
+</section>
+
+<section class="promotions" id="promocoes">
+    <h2>Promoções Especiais</h2>
+    <div class="promotion">
+        <h3>20% de Desconto</h3>
+        <p>Em compras acima de R$ 100,00!</p>
+    </div>
+</section>
+
+<footer>
+    <p>Contato: (xx) xxxxx-xxxx| Email: contato@petshop.com</p>
+    <p>Sigam-nos nas redes sociais!</p>
+</footer>
+
+<script>
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.carousel-images img');
+        if (index >= slides.length) currentSlide = 0;
+        if (index < 0) currentSlide = slides.length - 1;
+        for (let slide of slides) {
+            slide.style.display = 'none';
+        }
+        slides[currentSlide].style.display = 'block';
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide--;
+        showSlide(currentSlide);
+    }
+
+    // para inicializar o carrossel
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>

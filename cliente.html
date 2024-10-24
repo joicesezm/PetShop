@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pai de Pet</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <p> Cadastro de <i>Pai ou Mãe</i> de Pet </p>
+    <form name="form-pet" action="cadastro-pet.php" method="post">
+        <div>
+            <label for="cpf"> CPF:
+                <input type="text" id="cpf" name="cpf" placeholder="xxx-xxx-xxx-xx">
+            </label>
+        </div>
+        <div>
+        <label for="nome"> Nome:
+            <input type="text" id="nome" name="nome" placeholder="Informe seu nome">
+        </label>
+    </div>
+    <div>
+        <label> Email: 
+            <input type="text" id="email" name="email" placeholder="Email">
+        </label>
+    </div>
+    <div>
+        <label> Celular: 
+            <input type="text" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx">
+        </label>
+    </div>
+    <div>
+        <label for="datadenascimento">Data de Nascimento:
+            <input type="date" id="datadenascimento" name="datadenascimento" value="dd/mm/aaaa">
+        </label>
+    </div>
+    <div>
+        <label  for="cidade"> Cidade:
+            <input type="text" name="cidade" id="cidade" placeholder="Informe sua cidade:">
+        </label>
+    </div>
+    <div>
+        <label  for="endereco"> Endereço
+            <input type="text" name="endereco" id="endereco" placeholder="Informe seu endereço">
+        </label>
+    </div>
+    <div>
+        <label  for="numeroCasa"> Número Casa:
+            <input type="text" name="numeroCasa" id="numeroCasa" placeholder="Informe seu número de casa">
+        </label>
+    </div>
+    <div>
+        <label for="senha"> Senha:
+            <input type="text" id="senha" name="senha" placeholder="Informe sua senha de 8 digitos">
+        </label>
+    </div>
+    <div>
+        <label for="confirmarsenha"> Senha:
+            <input type="text" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha de 8 digitos">
+        </label>
+    </div>
+    <button type="submit" value="Cadastrar">Cadastrar</button>
+    </form>
+
+</body>
+
+</html>
