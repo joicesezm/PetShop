@@ -1,0 +1,108 @@
+/* Estilos básicos de página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button{
+    text-align: center;
+    width: 20%;
+    padding: 12px;
+    background-color: #a2c3e7;
+    cursor: pointer;
+    border-radius: 15%;
+    transition: background-color 0.3s ease;    
+}
+
+/* Estilizando a imagem de login para ser redonda */
+img {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura igual à largura para manter a forma circular */
+    display: block; /* Centraliza a imagem quando usada com margin auto */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente e adiciona margem vertical */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave à imagem */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao aplicar transformações */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse sobre ela */
+}
+
+table {
+     border: 1 solid gray;
+     width: 100%;
+     border-collapse: collapse;
+     margin: 10px 0;
+}
+
+th{
+    background-color: antiquewhite;
+}
+
+th, td{
+    padding: 12px;
+    text-align: left;
+    border:1px solid #a2c3e7;
+}
