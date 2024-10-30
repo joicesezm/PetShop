@@ -14,8 +14,4 @@ $conexao =
     if (isset($conexao)){
         //echo "<b>Banco de dados selecionados com sucesso!!!</b>";
     }
-
-
-
-
 ?>

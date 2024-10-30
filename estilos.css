@@ -75,6 +75,12 @@ button{
     transition: background-color 0.3s ease;    
 }
 
+iframe {
+    width: 100%;
+    height: 500px;  
+    border: none;  
+}
+
 /* Estilizando a imagem de login para ser redonda */
 img {
     width: 150px; /* Define a largura da imagem */

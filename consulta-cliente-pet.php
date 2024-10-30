@@ -46,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Exibe os resultados
         while ($row = mysqli_fetch_assoc($resultadoConsulta)) {
+            $cpf = $row['cpf'];
             echo "<tr>
                     <td>{$row['cpf']}</td>
                     <td>{$row['nome']}</td>
@@ -55,6 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <td>{$row['cidade']}</td>
                     <td>{$row['endereco']}</td>
                     <td>{$row['nrcasa']}</td>
+                    <td>
+                        <a href='editar_cliente_pet.php?cpf=$cpf'>Editar</a>
+                        <a href='excluir_cliente.php?cpf=$cpf'>Excluir</a>
+                    </td>
                   </tr>";
         }
         echo "</table>";

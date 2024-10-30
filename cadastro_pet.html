@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de PET</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <form action="cadastro-pet.php" method="post">
+        <div>
+            <label for="nome"> Nome:
+                <input type="text" id="nome" name="nome" placeholder=" Informe o nome do Pet" </label>
+        </div>
+        <div>
+            <label for="especie"> Especie:
+                <input type="text" id="especie" name="especie" placeholder=" Informe a especie do animal"> </label>
+        </div>
+        <div>
+            <label for="raca"> Raça:
+                <input type="text" id="raca" name="raca" placeholder=" Informe a raça do animal"> </label>
+        </div>
+        <div>
+            <label for="Idade"> Idade:
+                <input type="number" id="idade" name="idade"> </label>
+        </div>
+        <div>
+            <label for="sexo">Sexo do animal:
+                <input type="radio" name="sexo" id="sexo" value="f" checked> Feminino
+                <input type="radio" name="sexo" id="sexo" value="m"> Masculino
+            </label>
+        </div>
+        <div>
+            <label for="cliente"> Cliente:
+                <input type="text" id="cpf_cliente" name="cpf_cliente"> </label>
+        </div>
+        <div>
+        <button type="submit" name="cadastrar" value="Cadastrar">Cadastrar</button>
+
+
+    </form>
+
+</body>
+
+</html>
