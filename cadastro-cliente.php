@@ -39,7 +39,9 @@ if (
     $resultadoCliente = mysqli_query($conexao, $resultSqlCliente);
 
     if (mysqli_insert_id($conexao)){
-        $_SESSION['msg'] = "<p> Cliente Cadastrado com Sucesso</p>";
+      //  echo "<script> alert(' ". strip_tags($_SESSION['msg']). "'); </script>";
+       // unset($_SESSION['msg']);
+        header("Location: consulta-cliente-pet.php") ;
     }
     else{
         $_SESSION['msg'] = "<p> Cliente não Cadastrado</p>";
